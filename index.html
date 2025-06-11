@@ -10,32 +10,77 @@
 <body>
     <header>
         <img src="assets/logo.png" alt="Affinicom Logo" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" data-page="about" class="nav-link">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="tab-link" data-tab="network">Network Design</a>
+                        <a href="#" class="tab-link" data-tab="permitting">Permitting</a>
+                        <a href="#" class="tab-link" data-tab="site">Site Surveys</a>
+                        <a href="#" class="tab-link" data-tab="docs">Documentation</a>
+                        <a href="#" class="tab-link" data-tab="kpi">KPI Tracking</a>
+                    </div>
+                </li>
+                <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
         <h1>Affinicom</h1>
         <p>Human Centered Connectivity</p>
     </header>
     <main>
-        <section class="about">
-            <h2>About Us</h2>
-            <p>At AFFINICOM, we are a telecom engineering startup delivering end-to-end solutions that enable operators, infrastructure providers, and OEMs to plan, deploy, and optimize networks faster and smarter.</p>
-            <p>Our team brings hands-on expertise in:</p>
-            <ul>
-                <li>📡 Fiber & RF Network Design (FTTH, FTTx)</li>
-                <li>📝 Permitting, Liaisoning & NOC Approvals</li>
-                <li>🏗️ Site Surveys, Civil Works & Implementation</li>
-                <li>🛠️ Documentation, GIS Mapping & BOQs</li>
-                <li>📊 KPI Tracking, Audits & Process Optimization</li>
-            </ul>
-            <p>With deep industry insight, agile execution models, and a client-first mindset, we help partners accelerate rollout timelines, maintain regulatory compliance, and reduce operational risks.</p>
-            <p>We are committed to building the future of connectivity—engineered with excellence.</p>
+        <!-- Home Page -->
+        <section id="page-home" class="page active animated">
+            <h2>Welcome to Affinicom</h2>
+            <p>Your partner in telecom engineering, delivering end-to-end solutions for network planning, deployment, and optimization.</p>
+            <button class="next-btn" data-next="about">Next &rarr;</button>
         </section>
-        <section class="cta">
+
+        <!-- About Us + Tabs -->
+        <section id="page-about" class="page animated">
+            <h2>About Us</h2>
+            <div class="tabs">
+                <button class="tab-link active" data-tab="network">Network Design</button>
+                <button class="tab-link" data-tab="permitting">Permitting</button>
+                <button class="tab-link" data-tab="site">Site Surveys</button>
+                <button class="tab-link" data-tab="docs">Documentation</button>
+                <button class="tab-link" data-tab="kpi">KPI Tracking</button>
+            </div>
+            <div class="tab-content" id="tab-network">
+                <h3>Fiber & RF Network Design (FTTH, FTTx)</h3>
+                <p>Our team specializes in creating robust fiber and RF network architectures tailored for rapid deployment and future scalability.</p>
+            </div>
+            <div class="tab-content" id="tab-permitting" style="display:none;">
+                <h3>Permitting, Liaisoning & NOC Approvals</h3>
+                <p>We navigate the regulatory landscape, ensuring timely approvals and smooth project execution.</p>
+            </div>
+            <div class="tab-content" id="tab-site" style="display:none;">
+                <h3>Site Surveys, Civil Works & Implementation</h3>
+                <p>Comprehensive site surveys and civil works management for efficient and compliant implementation.</p>
+            </div>
+            <div class="tab-content" id="tab-docs" style="display:none;">
+                <h3>Documentation, GIS Mapping & BOQs</h3>
+                <p>Accurate documentation, GIS mapping, and bills of quantities for transparent and manageable projects.</p>
+            </div>
+            <div class="tab-content" id="tab-kpi" style="display:none;">
+                <h3>KPI Tracking, Audits & Process Optimization</h3>
+                <p>Continuous monitoring and optimization to exceed performance and compliance standards.</p>
+            </div>
+            <button class="next-btn" data-next="contact">Next &rarr;</button>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="page-contact" class="page animated">
             <h2>Let’s Connect</h2>
             <p>Looking for a reliable partner in telecom rollouts, engineering, or infra execution?</p>
             <p>Email us at: <a href="mailto:contact@affinicom.com">contact@affinicom.com</a></p>
+            <button class="next-btn" data-next="home">Back to Home</button>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Affinicom. All rights reserved.</p>
     </footer>
+    <script src="assets/script.js"></script>
 </body>
 </html>
