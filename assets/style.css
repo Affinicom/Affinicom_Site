@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0c1021;
+    color: #ffffff;
+}
+header {
+    text-align: center;
+    background-color: #111831;
+    padding: 2rem 1rem;
+}
+.logo {
+    width: 120px;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+}
+p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+main {
+    padding: 2rem;
+}
+.about, .cta {
+    margin-bottom: 2rem;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+ul li {
+    margin: 0.5rem 0;
+}
+a {
+    color: #6cb6ff;
+}
+footer {
+    background-color: #111831;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #888;
+}
