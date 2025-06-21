@@ -80,7 +80,7 @@
           <div class="image-wrapper d-flex justify-content-center mb-4">
             <img src="assets/images/permit-drawing.jpg" alt="">
           </div>
-          <div class="card-content-text">
+          <div class="card-content-text" id="scroll-target">
             <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
             <strong>Permitting</strong></h3>
           <div class="row card-box align-left">
@@ -121,5 +121,15 @@
   
   
   <input name="animation" type="hidden">
-  </body>
+<script>
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      const target = document.getElementById('scroll-target');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 500); // .5 seconds
+  });
+</script>
+</body>
 </html>
