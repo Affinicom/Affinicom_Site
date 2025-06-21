@@ -34,7 +34,20 @@
     overflow-x: hidden;
   }
 
+  main {
+    min-height: calc(100vh - 100px); /* Adjust based on actual footer height */
+  }
+
+  footer, section[id^="footer"] {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  body > * {
+    margin-bottom: 0;
+  }
 </style>
+
 
   
 </head>
